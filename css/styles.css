@@ -148,7 +148,7 @@ h6, .h6 {
 	transition: all .1s ease-in;
 }
 
-.card-link>a {
+.card-link > a {
   color: inherit;
   text-decoration: none;
 }
