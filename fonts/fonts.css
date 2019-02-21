@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'public-gothic';
+    src: url('public_gothic/publicgothicsquare.eot'); /* IE9 Compat Modes */
+    src: url('public_gothic/publicgothicsquare.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    	url('public_gothic/publicgothicsquare.woff2') format('woff2'), /* Super Modern Browsers */
+        url('public_gothic/publicgothicsquare.woff') format('woff'), /* Pretty Modern Browsers */
+        url('public_gothic/publicgothicsquare.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('public_gothic/publicgothicsquare.svg#bankgothic_md_btmedium') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
