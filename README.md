@@ -1,3 +1,3 @@
 # Blankman - Static
 
-A Bootstrap 4 website boiler plate.
+A Bootstrap 4 website boilerplate.
