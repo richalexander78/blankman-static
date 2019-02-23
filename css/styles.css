@@ -35,7 +35,7 @@ h5, .h5,
 h6, .h6 {
 	font-family: var(--public-gothic);
 	line-height: .9;
-	letter-spacing: .5px;
+/* 	letter-spacing: .5px; */
 	text-transform: uppercase;
 }
 
@@ -143,9 +143,9 @@ img {
 /*------------------------------------*\
 	Cards
 \*------------------------------------*/
-.card {
+.card-link {
 	top: 0;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 	transition: all .1s ease-in;
 }
 
@@ -156,7 +156,7 @@ img {
 
 .card-link:hover {
 	top: -2px;
-	box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 
 
