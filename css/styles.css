@@ -183,27 +183,27 @@ img {
 /*------------------------------------*\
 	Footer
 \*------------------------------------*/
-footer {
+.colophon {
 	background-color: var(--medium);
 }
 
-footer .nav-link {
+.colophon .nav-link {
 	color: #fff;
 }
 
-footer .nav-link:hover {
+.colophon .nav-link:hover {
 	color: var(--light);
 }
 
-footer .copyright {
+.colophon .copyright {
 	color: var(--light);
 }
 
-footer i {
+.colophon i {
 	color: #fff;
 	padding: 0.75rem;
 }
 
-footer i:hover {
+.colophon i:hover {
 	color: var(--light);
 }
