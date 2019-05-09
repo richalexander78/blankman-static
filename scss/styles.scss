@@ -4,9 +4,10 @@
 \*------------------------------------*/
 :root {
 	/* colors */
-	--light: rgba(255, 255, 255, 0.5);
-	--medium: #343a40;
-	--dark: #000000;
+	--white-50: rgba(255, 255, 255, 0.5);
+	--white-75: rgba(255, 255, 255, 0.75);
+	--dark: #343a40;
+	--black: #000000;
 	
 	/* fonts */
 	--primary-font: 'Montserrat', sans-serif;
@@ -14,15 +15,18 @@
 	--public-gothic: 'public-gothic', 'Teko', sans-serif;
 }
 
+
 /*------------------------------------*\
-	Colors
+	Base
 \*------------------------------------*/
 body {
 	font-family: var(--primary-font);
-	font-weight: 500;
 	/* padding-top: 56px; for fixed-navbar*/
 }
 
+.bg-dark {
+  background-color: var(--dark) !important;
+}
 
 /*------------------------------------*\
 	Typography
@@ -35,7 +39,6 @@ h5, .h5,
 h6, .h6 {
 	font-family: var(--public-gothic);
 	line-height: .9;
-/* 	letter-spacing: .5px; */
 	text-transform: uppercase;
 }
 
@@ -64,7 +67,7 @@ img {
 
 .parallax { 
     /* The image used with dark overlay */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url(../images/desk.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url(../img/desk.jpeg);
 
     /* Set a specific height */
     height: auto; 
@@ -97,7 +100,7 @@ img {
 .navbar .nav-pills .show > .nav-link,
 .navbar .nav-pills .nav-link.show {
   color: #fff;
-  background-color: var(--medium);
+  background-color: var(--dark);
 }
 
 
@@ -105,16 +108,6 @@ img {
 	Carousel
 	https://bootstrapious.com/p/bootstrap-carousel
 \*------------------------------------*/
-/**** overlay for better readibility of the caption ****/
-.carousel-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.3;
-    transition: all 0.2s ease-out;
-}
-
 /**** carousel fullscreen ****/
 .carousel-fullscreen .carousel-inner .carousel-item {
     height: calc(100vh - 182px); 
@@ -123,23 +116,27 @@ img {
     background-repeat: no-repeat; 
     background-size: cover;
     -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+}
+
+/**** overlay for better readibility of the caption ****/
+.carousel-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	transition: all 0.2s ease-out;
 }
 
 /**** carousel fullscreen - vertically centered caption ****/
 .carousel-fullscreen .carousel-caption {
     top: 50%;  
     bottom: auto;
-    -webkit-transform: translate(0, -50%); 
+    -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%); 
     transform: translate(0, -50%);
-}
-
-/**** carousel fullscreen - vertically centered caption ****/
-.carousel-fullscreen .carousel-caption h3 {
-    font-family: var(--public-gothic);
-    text-transform: uppercase;
 }
 
 .carousel-indicators li {
@@ -155,55 +152,48 @@ img {
 	Introduction Section
 \*------------------------------------*/
 .jumbotron-texture {
-	background-color: var(--medium);
+	background-color: var(--dark);
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23ffffff' fill-opacity='0.03' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 
 /*------------------------------------*\
-	Cards
+	Shadow
 \*------------------------------------*/
-.card-shadow {
+.shadow-sm-hover {
 	top: 0;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 	transition: all .1s ease-in;
 }
 
-.card-shadow > a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.card-shadow:hover {
+.shadow-sm-hover:hover {
 	top: -2px;
-	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-
 
 /*------------------------------------*\
 	Footer
 \*------------------------------------*/
-.colophon {
-	background-color: var(--medium);
-}
-
 .colophon .nav-link {
 	color: #fff;
 }
 
 .colophon .nav-link:hover {
-	color: var(--light);
+	color: var(--white-75);
 }
 
 .colophon .copyright {
-	color: var(--light);
+	color: var(--white-50);
 }
 
 .colophon i {
-	color: #fff;
+	color: var(--white-50);
 	padding: 0.75rem;
 }
 
 .colophon i:hover {
-	color: var(--light);
+	color: var(--white-75);
 }
+
+
+
