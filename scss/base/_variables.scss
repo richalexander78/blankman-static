@@ -20,10 +20,14 @@ $color-link-hover: #0056b3;
 // $color-link-visited:;
 // $color-shadow:;
 
+// Asset Paths
+$img-path: '../img';
+$font-path: '../fonts';
+
 // Fonts
 $font-san-serif: Helvetica, Arial, sans-serif;
 $font-body: 'Montserrat', $font-san-serif;
 $teko: 'Teko', $font-san-serif;
-$font-header: 'public-gothic', $teko;
+$font-header: 'public-gothic';
 
 
