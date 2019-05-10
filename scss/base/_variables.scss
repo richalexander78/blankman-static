@@ -1,0 +1,29 @@
+// Descriptive color variables
+$white: #fff;
+$white-50: rgba($white,.5);
+$white-75: rgba($white,.75);
+$black: #000;
+$black-50: rgba($black,.5);
+$black-75: rgba($black,.75);
+
+$grey: #878787;
+$dark: #343a40;
+
+// Functional color variables
+$color-body: #212529;
+$color-primary: $dark;
+// $color-secondary:;
+// $color-tritiary:;
+// $color-border:;
+$color-link: #007bff;
+$color-link-hover: #0056b3;
+// $color-link-visited:;
+// $color-shadow:;
+
+// Fonts
+$font-san-serif: Helvetica, Arial, sans-serif;
+$font-body: 'Montserrat', $font-san-serif;
+$teko: 'Teko', $font-san-serif;
+$font-header: 'public-gothic', $teko;
+
+

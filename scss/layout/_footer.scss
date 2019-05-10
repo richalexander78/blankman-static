@@ -2,17 +2,17 @@
 	Footer
 \*------------------------------------*/
 .colophon {
-	.nav-link { color: #fff; }
+	.nav-link { color: $white; }
 
 	.nav-link:hover,
-	.nav-link:focus { color: var(--white-75); }
+	.nav-link:focus { color: $white-75; }
 
-	.copyright { color: var(--white-50); }
+	.copyright { color: $white-50; }
 
 	i {
-		color: var(--white-50);
+		color: $white-50;
 		padding: 0.75rem;
 	}
 
-	i:hover { color: var(--white-75); }
+	i:hover { color: $white-75; }
 }
