@@ -8,8 +8,8 @@ Fonts
 Base
 ------------------------------------*/
 body {
-	font-family: $font-body;
-	color: $color-body;
+	font-family: $font-stack-primary;
+	color: $color-text;
 	/* padding-top: 56px; for fixed-navbar*/
 }
 
@@ -25,7 +25,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: $font-header, $teko;
+	font-family: $font-header, $font-stack-secondary;
 	line-height: .9;
 	text-transform: uppercase;
 }
@@ -42,20 +42,21 @@ h6, .h6 {
 /*------------------------------------
 Navigation
 ------------------------------------*/
-.navbar .nav-pills .nav-link {
-	padding-right: 1rem;
-	padding-left: 1rem;
-}
-
-.navbar .nav-pills .nav-link:hover,
-.navbar .nav-pills .nav-link:focus,
-.navbar .nav-pills .nav-link.active,
-.navbar .nav-pills .show > .nav-link,
-.navbar .nav-pills .active > .nav-link,
-.navbar .nav-pills .show > .nav-link,
-.navbar .nav-pills .nav-link.show {
-  color: $white;
-  background-color: $color-primary;
+.navbar .nav-pills {
+	.nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	.nav-link:hover,
+	.nav-link:focus,
+	.nav-link.active,
+	.show > .nav-link,
+	.active > .nav-link,
+	.show > .nav-link,
+	.nav-link.show {
+		color: $white;
+		background-color: $color-primary;
+	}
 }
 
 
@@ -73,32 +74,43 @@ img {
 	background-position: center;
 }
   
-  .parallax { 
-	  // Image with dark overlay
-	  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url(../img/desk.jpeg);
-  
-	  // Set a specific height
-	  height: auto; 
-	  
-	  // Create the parallax scrolling effect
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-  }
-  
-  .badge {
+.parallax { 
+	// Image with dark overlay gradient
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url("../img/desk.jpeg") no-repeat;
+
+	// Set a specific height
+	height: auto; 
+	
+	// Create the parallax scrolling effect
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.skewed {
+	height: auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url("../img/desk.jpeg") no-repeat;
+	background-blend-mode: multiply;
+	background-size: cover;
+	@include skewed {
+		background-color: $white;
+		bottom: -25px;
+	}
+}
+
+.badge {
 	line-height: 1.5;
-  }
+}
   
   
-  /*------------------------------------*\
-	  Introduction Section
-  \*------------------------------------*/
-  .jumbotron-texture {
-	  background-color: $color-primary;
-	  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23ffffff' fill-opacity='0.03' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
+/*------------------------------------*\
+	Introduction Section
+\*------------------------------------*/
+.jumbotron-texture {
+	background-color: $color-primary;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23ffffff' fill-opacity='0.03' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
   
   
   /*------------------------------------*\
@@ -114,3 +126,20 @@ img {
 	  top: -2px;
 	  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
+
+
+  /*------------------------------------*\
+	Footer
+\*------------------------------------*/
+.colophon {
+	.nav-link { color: $white; }
+
+	.nav-link:hover,
+	.nav-link:focus,
+	i:hover { color: $white-75; }
+
+	.copyright,
+	i { color: $white-50; }
+
+	i { padding: 0.75rem; }
+}
