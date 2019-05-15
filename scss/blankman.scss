@@ -2,7 +2,10 @@
 // Global Imports
 // ==========================================================================
 
-@import "utilities";
+@import "variables";
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "mixins";
+@import "functions";
 @import "base";
-@import "components";
-
+@import "carousel";

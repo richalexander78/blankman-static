@@ -16,7 +16,8 @@
     "url": "https://github.com/richalexander78/blankman-static/issues"
   },
   "homepage": "https://github.com/richalexander78/blankman-static#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "bootstrap": "^4.3.1"
   }
 }
