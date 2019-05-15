@@ -89,16 +89,24 @@ img {
 	background-size: cover;
 }
 
-.skewed {
-	height: auto;
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url("../img/desk.jpeg") no-repeat;
-	background-blend-mode: multiply;
-	background-size: cover;
-	@include skewed {
-		background-color: $white;
-		bottom: -25px;
-	}
+.skewed svg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10vw;
+	/* set height to pixels if you want angle to change with screen width */
 }
+
+// .skewed {
+// 	height: auto;
+// 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url("../img/desk.jpeg") no-repeat;
+// 	background-blend-mode: multiply;
+// 	background-size: cover;
+// 	@include skewed {
+// 		background-color: $white;
+// 		bottom: -25px;
+// 	}
+// }
 
 .badge { line-height: 1.5; }
   
