@@ -2,8 +2,7 @@
 // Global Imports
 // ==========================================================================
 
-// Utilities
-@import 'utilities/index',
-        'base/index',
-        'layout/index',
-        'components/index';
+@import "utilities";
+@import "base";
+@import "components";
+

@@ -1,29 +1,15 @@
 // Descriptive color variables
-$white: #fff;
-$white-50: rgba($white,.5);
-$white-75: rgba($white,.75);
-$black: #000;
-$black-50: rgba($black,.5);
-$black-75: rgba($black,.75);
+// $white-50: rgba($white,.5);
+// $white-75: rgba($white,.75);
+// $black-50: rgba($black,.5);
+// $black-75: rgba($black,.75);
 
-$grey: #878787;
-$dark: #343a40;
 
 // Functional color variables
-$color-text: #212529;
-$color-primary: $dark;
-$color-primary-light: lighten($color-primary, 25%);
-$color-primary-dark: darken($color-primary, 25%);
-$color-primary-complement: complement($color-primary);
-$color-primary-complement-light: lighten($color-primary-complement, 10%);
-// $color-secondary:;
-// $color-tritiary:;    
-// $color-accent: ;
-// $color-border:;
-$color-link: #007bff;
-$color-link-hover: #0056b3;
-// $color-link-visited:;
-// $color-shadow:;
+// $color-primary-light: lighten($color-primary, 25%);
+// $color-primary-dark: darken($color-primary, 25%);
+// $color-primary-complement: complement($color-primary);
+// $color-primary-complement-light: lighten($color-primary-complement, 10%);
 
 // Asset Paths
 $img-path: '../img';
@@ -41,4 +27,5 @@ $break-md: '(min-width: 768px)';
 $break-lg: '(min-width: 992px)';
 $break-xl: '(min-width: 1200px)';
 
-
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap";

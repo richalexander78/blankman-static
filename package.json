@@ -1,0 +1,22 @@
+{
+  "name": "blankman-static",
+  "version": "1.0.0",
+  "description": "A bootstrap 4 boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richalexander78/blankman-static.git"
+  },
+  "author": "RichardJAlexander.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richalexander78/blankman-static/issues"
+  },
+  "homepage": "https://github.com/richalexander78/blankman-static#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
